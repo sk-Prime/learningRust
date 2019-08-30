@@ -165,10 +165,11 @@ fn command_add(trillion: &mut Bank) {
 
 fn command_login(trillion: &Bank) -> (String, String, usize, bool) {
     cyan_ln!("\nLogin");
-
-    /*let mut name:String;
-    let mut password = String::new();
-    let mut index: usize;*/
+    /*
+    let mut name:String;
+    let mut password:String;
+    let mut index: usize;
+    */
     loop {
         let name = input_text("\ntype your name (c to close): ".to_string());
         if name == "c" {
