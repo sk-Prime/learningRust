@@ -1,6 +1,6 @@
 use colour::*;
 use std::io;
-#[derive(Debug)]
+
 struct Account {
     name: String,
     password: String,
@@ -24,7 +24,7 @@ impl Account {
     }
 }
 
-#[derive(Debug)]
+
 struct Bank {
     vault: Vec<Account>,
 }
